@@ -1,0 +1,113 @@
+  @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+/* Color format */
+:root{
+    --Dark-cyan: hsl(185, 75%, 39%);
+    --Very-dark-blue: hsl(229, 23%, 23%);
+    --Dark-grayish-blue: hsl(227, 10%, 46%);
+    --Dark-gray: hsl(0, 0%, 59%);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 18px;
+    color: var(--Very-dark-blue);
+    /* background-color: var(--Dark-cyan);
+    background-image: url(./images/bg-pattern-top.svg), url(./images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-size: 60%, 67%;
+    background-position: top -27rem left -15rem, bottom -44rem right -16rem; */
+}
+
+.main{
+    background-color: var(--Dark-cyan);
+    min-height: 100vh;
+    background-image: url(./images/bg-pattern-top.svg), url(./images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-size: 60%, 67%;
+    background-position: top -27rem left -15rem, bottom -44rem right -16rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    background-color: white;
+    max-width: 350px;
+    text-align: center;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.header{
+    background-image: url(./images/bg-pattern-card.svg);
+    height: 125px;
+    width: 350px;
+    background-size: cover;
+}
+
+.avator img{
+    width: 100px;
+    height: 100px;
+    border: 5px solid white;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: -50px auto -30px auto;
+}
+
+.card-body{
+    margin-top: 50px;
+    margin-bottom: -75px;
+    height: 250px;
+    line-height: 1.5;
+}
+
+.card-body .name{
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.card-body .place{
+    margin-top: 5px;
+    font-size: 16px;
+    color: var(--Dark-gray);
+}
+
+.card-body .age{
+    font-size: 18px;
+    font-weight: 100;
+    color: var(--Dark-gray);
+    padding-left: 5px;
+}
+
+
+.footer-activity{
+    padding-top: 25px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-top: 1px solid rgb(209, 207, 207);
+    margin-top: 25px;
+    /* margin-right: 40px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.footer-activity .act-list{
+    display: block;
+    font-weight: 100;
+    font-size: 12px;
+    color: var(--Dark-gray);
+    letter-spacing: 1.5;
+}
+
